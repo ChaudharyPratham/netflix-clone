@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconNetflix.png">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html,body{
+        background-color: rgb(255, 254, 254);
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        background-color: #fafcfe;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left,.right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    .logo{
+        max-width: 100px;
+    }
+    
+    .signup-container {
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .signup-container h4,.signup-container h2 {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    
+    .signup-container p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 15px 100px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+</style>
+<body>
+      <header>
+        <div class="left">
+            <img class="logo" src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png" alt="logo">
+        </div>
+        <div class="right">
+            <a href="signup.html" style="color: #000000;">Sign In</a>
+        </div>
+      </header>
+      <main>
+        <div class="signup-container">
+            <img src="image2/card.png" alt="" style="padding-top: 80px;">
+            <h4>STEP 1 OF 3</h4>
+            <h2>Finish setting up your account</h2>
+            <p>Netflix is personalized for you. Create a password to watch on any device at any time.</p>
+            <button onclick="fun()">Next</button>
+        </div>
+    </main>
+    <script>
+        function fun() {
+            window.open("signup2.html",'_self');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="iconNetflix.png">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+  </head>
+  <style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html,body{
+        background-color: rgb(255, 254, 254);
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header {
+        background-color: #fafcfe;
+        color: #000;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left, .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    .logo {
+        max-width: 100px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .b1{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .p1{
+        font-size: 10px;
+        font-weight: bold;
+        color: gray
+    }
+    .p2{
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .p3{
+        font-weight: 700;
+        font-size: x-large;
+    }
+    h4,h2{
+        margin-left: 160px;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .para{
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        color: gray;
+    }
+    .para a{
+        color: blue;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
+    button {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 15px 100px; 
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .selected{
+        background-color: #ff0000;
+        color: #fdfafa;
+        box-shadow: 4px -10px 10px blueviolet;
+    }
+    .card{
+        cursor: pointer;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    .card:active{
+        box-shadow: 4px 4px 10px blueviolet;
+    }
+</style>
+  <body>
+    <header>
+        <div class="left">
+            <img class="logo" src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png" alt="logo">
+        </div>
+        <div class="right">
+            <a href="signup.html" style="color: #0a0a0a;">Sign Out</a> 
+        </div>
+    </header>
+    <h4>STEP 2 OF 3</h4>
+    <h2>Choose the plan that's right for you</h2>
+    <div class="b1">
+        <div class="card" style="width: 18rem; background-color:#ff00aa">
+            <div class="card-header">
+                <p class="p3">Premium</p><p class="p2">4K + HDR</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><p class="p1">Monthly price</p><p class="p2">$15</p></li>
+              <li class="list-group-item"><p class="p1">Video and sound quality</p><p class="p2">Best</p></li>
+              <li class="list-group-item"><p class="p1">Resolution</p><p class="p2">4K(Ultra HD) + HDR</p></li>
+              <li class="list-group-item"><p class="p1">Spatial audio (immersive sound)</p><p class="p2">Included</p></li>
+              <li class="list-group-item"><p class="p1">Supportede devices</p><p class="p2">TV,Computer,Mobile Phone,Tablet</p></li>
+              <li class="list-group-item"><p class="p1">Devices can watch at the same time</p><p class="p2">4</p></li>
+              <li class="list-group-item"><p class="p1">Download Devices</p><p class="p2">6</p></li>
+            </ul>
+        </div>
+        <div class="card " style="width: 18rem; background-color:#ff7b00">
+            <div class="card-header ">
+                <p class="p3">Standard</p><p class="p2">1080p</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><p class="p1">Monthly price</p><p class="p2">$12</p></li>
+              <li class="list-group-item"><p class="p1">Video and sound quality</p><p class="p2">Great</p></li>
+              <li class="list-group-item"><p class="p1">Resolution</p><p class="p2">1080p (Full HD)</p></li>
+              <li class="list-group-item"><p class="p1">Supportede devices</p><p class="p2">TV,Computer,Mobile Phone,Tablet</p></li>
+              <li class="list-group-item"><p class="p1">Devices can watch at the same time</p><p class="p2">2</p></li>
+              <li class="list-group-item"><p class="p1">Download Devices</p><p class="p2">2</p></li>
+            </ul>
+        </div>
+        <div class="card" style="width: 18rem; background-color:#f2ff00">
+            <div class="card-header">
+                <p class="p3">Basic</p><p class="p2">720p</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><p class="p1">Monthly price</p><p class="p2">$9</p></li>
+              <li class="list-group-item"><p class="p1">Video and sound quality</p><p class="p2">Good</p></li>
+              <li class="list-group-item"><p class="p1">Resolution</p><p class="p2">720p(HD)</p></li>
+              <li class="list-group-item"><p class="p1">Supportede devices</p><p class="p2">TV,Computer,Mobile Phone,Tablet</p></li>
+              <li class="list-group-item"><p class="p1">Devices can watch at the same time</p><p class="p2">1</p></li>
+              <li class="list-group-item"><p class="p1">Download Devices</p><p class="p2">1</p></li>
+            </ul>
+        </div>
+        <div class="card" style="width: 18rem; background-color:#00ffee">
+            <div class="card-header">
+                <p class="p3">Mobile</p><p class="p2">480p</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><p class="p1">Monthly price</p><p class="p2">$7</p></li>
+              <li class="list-group-item"><p class="p1">Video and sound quality</p><p class="p2">Fair</p></li>
+              <li class="list-group-item"><p class="p1">Resolution</p><p class="p2">480p</p></li>
+              <li class="list-group-item"><p class="p1">Supportede devices</p><p class="p2">Mobile Phone,Tablet</p></li>
+              <li class="list-group-item"><p class="p1">Devices can watch at the same time</p><p class="p2">1</p></li>
+              <li class="list-group-item"><p class="p1">Download Devices</p><p class="p2">1</p></li>
+            </ul>
+        </div>
+    </div>
+    <div class="para">
+        <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. 
+            Not all content is available in all resolutions. See our <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a> for more details.</p>
+        <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium,
+             2 with Standard, and 1 with Basic and Mobile.</p>    
+    </div>
+    <div class="button-container">
+        <button onclick="fun()">Next</button>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function fun() {
+            window.open("signup5.html",'_self');
+        }
+        const btns = document.querySelectorAll(".card-header");
+        btns.forEach(btn => {
+            btn.addEventListener("click",()=>{
+                document.querySelectorAll('.card-header').forEach(cardHeader => {
+                    cardHeader.classList.remove('selected');
+                });
+                btn.classList.add("selected");
+            });
+        });
+    </script>
+  </body>
+</html>

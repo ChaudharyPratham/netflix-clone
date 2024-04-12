@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconNetflix.png">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html,body{
+        background-color: rgb(255, 254, 254);
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        background-color: #fafcfe;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left,.right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    .logo{
+        max-width: 100px;
+    }
+    
+    .signup-container {
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .signup-container h4,.signup-container h2 {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .signup-container h1{
+        margin-bottom: 10px;
+    }
+    .signup-container p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    input[type="password"] {
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    input[type="email"] {
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    button {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 15px 100px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .d1{
+        justify-content: center;
+    }
+    
+</style>
+<body>
+      <header>
+        <div class="left">
+            <img class="logo" src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png" alt="logo">
+        </div>
+        <div class="right">
+            <a href="signup.html" style="color: #000000;">Sign In</a>
+        </div>
+      </header>
+      <main>
+        <div class="signup-container">
+            <h4 style="padding-top:150px;">STEP 1 OF 3</h4>
+            <h2>Create a password to start your membership</h2>
+            <p>Just A few more steps and you're done! We hate paperwork,too.</p>
+            <form action="">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            </form>
+            <button onclick="fun()">Next</button>
+        </div>
+    </main>
+    <script>
+        function fun() {
+            window.open("signup3.html",'_self');
+        }
+    </script>
+</body>
+</html>
