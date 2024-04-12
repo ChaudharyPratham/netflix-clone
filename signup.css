@@ -72,8 +72,10 @@ form{
     left: 17%;
     padding: 20px 70px;
     font-size: large;
-    background-color: rgb(84, 81, 81);
+    background-color: rgb(36, 35, 35);
     color: azure;
+    font-size: large;
+    font-weight: 600;
 }
 /* .email-signin input[type=password]{
     position: relative;
